@@ -1,0 +1,10 @@
+--- debian/rules.orig	2010-09-20 12:04:57.000000000 -0400
++++ debian/rules	2010-09-20 12:05:07.000000000 -0400
+@@ -291,6 +291,7 @@
+ 	$(MAKE) -f debian/rules packaging-files \
+ 		ia32_prefix=ia32- \
+ 		packaging_files= \
++		priority=15 \
+ 		DEB_HOST_ARCH=i386
+ 
+ compare-jre-jars:
